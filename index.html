@@ -4,6 +4,7 @@
 		<script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
 		<script src="turtle.js"></script>
+		<script src="game.js"></script>
 	</head>
 	<body>
 		<a-scene physics ="gravity: 0">
@@ -23,12 +24,12 @@
 		</a-assets>
 			<a-sky src="space.jpeg" rotation="-180 10 0"></a-sky>
 			<a-entity position="-10 -25 -12" gltf-model="#islands" scale="3 3 3"></a-entity>
-			<a-entity movement position="-10 -25 -25" rotation="0 180 0" gltf-model="#researcher" scale="3 3 3" static-body="shape: sphere; sphereRadius: 6"></a-entity>
-			<a-entity position="-24 -24 32" gltf-model="#turtle" scale="3 3 3" static-body="shape: sphere; sphereRadius: 6"></a-entity>
-			<a-entity position="-38 -24 30" gltf-model="#turtle" scale="3 3 3" static-body="shape: sphere; sphereRadius: 6"></a-entity>
-			<a-entity position="32 -24 -22" gltf-model="#turtle" scale="3 3 3" static-body="shape: sphere; sphereRadius: 6"></a-entity>
-			<a-entity position="-24 -24 -30" gltf-model="#turtle" scale="3 3 3" static-body="shape: sphere; sphereRadius: 6"></a-entity>
-			<a-entity position="23 -24 -35" gltf-model="#turtle" scale="3 3 3" static-body="shape: sphere; sphereRadius: 6"></a-entity>
+			<a-entity YouWin movement position="-10 -25 -25" rotation="0 180 0" gltf-model="#researcher" scale="3 3 3" static-body="shape: sphere; sphereRadius: 16"></a-entity>
+			<a-entity YouWin position="-24 -24 32" gltf-model="#turtle" scale="3 3 3" static-body="shape: sphere; sphereRadius: 6"></a-entity>
+			<a-entity YouWin position="-38 -24 30" gltf-model="#turtle" scale="3 3 3" static-body="shape: sphere; sphereRadius: 6"></a-entity>
+			<a-entity YouWin position="32 -24 -22" gltf-model="#turtle" scale="3 3 3" static-body="shape: sphere; sphereRadius: 6"></a-entity>
+			<a-entity YouWin position="-24 -24 -30" gltf-model="#turtle" scale="3 3 3" static-body="shape: sphere; sphereRadius: 6"></a-entity>
+			<a-entity YouWin position="23 -24 -35" gltf-model="#turtle" scale="3 3 3" static-body="shape: sphere; sphereRadius: 6"></a-entity>
 		</a-scene>
 	</body>
 </html>

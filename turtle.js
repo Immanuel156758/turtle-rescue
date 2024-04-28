@@ -35,4 +35,5 @@ AFRAME.registerComponent("movement", {
 			z: camera_position.z -9,
 		});
 	},
+	
 });
